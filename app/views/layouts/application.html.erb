@@ -14,22 +14,25 @@
   <div id="main">
     <!-- Header -->
     <header id="header">
-      <h1>Cats.ai</h1>
+      <h1><%= link_to root_path, target:"_self" do %>Cats.ai<% end %></h1>
+      <%= link_to "Ver más información",about_path, target:"_self" %>
       <p>Gatos creados con la inteligencia artificial de  
         <%= link_to("Leonardo.ai", "https://app.leonardo.ai/", :target=>"_blank") %>
       </p>
       <ul class="icons">
-        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-        <li><a href="//github.com/mach-911" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
-        <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+        <li><a href="https://twitter.com/LeonardoAi_" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+        <li><a href="https://www.instagram.com/leonardoaiofficial/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+        <li><a href="https://github.com/mach-911/template-rails-d2" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+        <li><a href="https://www.youtube.com/watch?v=HUrzxiHZi6o" class="icon brands fa-youtube" target="_blank"><span class="label">Email</span></a></li>
       </ul>
     </header>
+  <section id="thumbnails">
     <%= yield %>
     <!-- Footer -->
+  </section>
     <footer id="footer">
       <ul class="copyright">
-        <li>&copy; 2023</li><li>Design: enidev911.</li>
+        <li>&copy; 2023</li><li>Enidev911.</li>
       </ul>
     </footer>
   </div>

@@ -744,3 +744,10 @@ var main = (function($) { var _ = {
 	},
 
 }; return _; })(jQuery); main.init();
+
+if(window.location.href.indexOf("about") > -1) {
+	document.querySelector(".nav-previous").style.display = "none";
+	document.querySelector(".nav-next").style.display = "none";
+	const slide = document.querySelector(".slide");
+	slide.setAttribute("class", "content")
+}
